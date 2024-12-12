@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okul Arama Haritası</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="navbar">
+    <div>
+      <img src="https://prnt.sc/9yBKo_vpGkci" alt="Logo" width="500">
+      <a href="ana sayfa/index.html">Anasayfa</a>
+      <a href="ana sayfa/index.html">Yardım</a>
+    </div>
+    <div>
+      <a href="loginregister.html">Kaydol</a>
+      <a href="loginregister.html">Giriş Yap</a>
+    </div>
+  </div>
+  <div id="map"></div>
+  <div id="searchContainer">
+    <input id="searchInput" type="text" placeholder="Okul ara...">
+    <ul id="suggestionList"></ul>
+  </div>
+  <button class="locate-me-button" onclick="locateUser()"></button>
+  <div id="cesiumContainer"></div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.100/Build/Cesium/Cesium.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
